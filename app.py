@@ -19,7 +19,12 @@ from lifetimes.plotting import plot_frequency_recency_matrix
 from lifetimes.plotting import plot_period_transactions
 from lifetimes.utils import calibration_and_holdout_data
 import squarify
+from dash import Dash, html, dcc
 # TODO: from wordcloud import WordCloud
+
+app = Dash(__name__)
+server = app.server
+
 
 from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
